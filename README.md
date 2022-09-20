@@ -89,3 +89,8 @@ Esecuzione di alcuni dei comandi disponibili:
 
 ![Screenshot search0](https://user-images.githubusercontent.com/62015297/191300273-34204ac3-6e11-43e9-8f6c-1812776336cb.png)
 ![Screenshot search1](https://user-images.githubusercontent.com/62015297/191301027-d0743949-5d81-4a25-9ddc-0fc6eeabd9b0.png)
+
+
+![Screenshot_20220920_155213_org telegram messenger](https://user-images.githubusercontent.com/62015297/191303491-00dfb54c-ce05-4185-9958-0ad8009671b7.jpg)
+![Screenshot_20220920_155200_org telegram messenger](https://user-images.githubusercontent.com/62015297/191303547-5a576179-21d8-4e59-b165-6556bd028c2a.jpg)
+![Screenshot_20220920_155045_org telegram messenger](https://user-images.githubusercontent.com/62015297/191303562-59435971-35f1-4527-bc52-af2a2dca8a12.jpg)
