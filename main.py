@@ -5,11 +5,7 @@ import requests
 import json
 from telepot.namedtuple import ReplyKeyboardRemove, ReplyKeyboardMarkup
 
-
-
 utente = {}
-
-
 
 # definizione della funzione on_chat_message
 def on_chat_message(message):
@@ -26,7 +22,7 @@ def on_chat_message(message):
         bot.sendMessage(chat_id, "Usa il menu per vedere i comandi disponibili.\n")
 
     elif 'text' in message and message['text'] == '/search':
-        message = 'Puoi inserire il nome di una città, regione, paese, etc. oppure cliccare sulle città suggerite'
+        message = 'Puoi inserire il nome di una città, regione, paese, etc. Oppure cliccare sulle città suggerite'
         markup = ReplyKeyboardMarkup(
             keyboard=[["Roma", "Parigi"], ["Tokyo", "Madrid"],
                       ["Los Angeles", "San Pietroburgo", "Sidney"]])
@@ -44,7 +40,7 @@ def on_chat_message(message):
         utente[chat_id] = 3
     elif 'text' in message and message['text'] == '/position':
         bot.sendMessage(chat_id,
-                         'Condividi la tua posizione(questo é possibile solo dai dispositivi mobili): ')
+                         'Condividi la tua posizione(questo è possibile solo dai dispositivi mobili): ')
         utente[chat_id] = 4
     elif 'text' in message and message['text'] == '/radius':
         bot.sendMessage(chat_id,
@@ -56,9 +52,8 @@ def on_chat_message(message):
             keyboard=[["cultural", "natural"], ["sport", "accomodations"],
                      ["tourist_facilities", "interesting_places", "amusements"]])
         bot.sendMessage(chat_id,
-                         'Inserisci la longitudine,la latitudine e il type:\nEsempio: 12.51133 41.89193 natural \n Le categorie nei bottoni sono solo dei suggerimenti per il type da scrivere con le coordinate. Se invece vuoi controllare se il tipo che vuoi inserire é disponibile,clicca su /catalog per avere il link in cui sono mostrate tutte le possibili alternative)',reply_markup= markup)
+                         'Inserisci la longitudine, la latitudine e il type:\nEsempio: 12.51133 41.89193 natural \n Le categorie nei bottoni sono solo dei suggerimenti per il type da scrivere con le coordinate. Se invece vuoi controllare se il tipo che vuoi inserire è disponibile, clicca su /catalog per avere il link in cui sono mostrate tutte le possibili alternative)',reply_markup= markup)
         utente[chat_id] = 6
-    
         
        
     elif utente[chat_id] == 1:
@@ -102,24 +97,24 @@ def on_chat_message(message):
                  json_data= r.json()
                  if "xid" in json_data:
                    xid = json_data["xid"]
-                   bot.sendMessage(chat_id,"Il xid {}".format(xid)+" é disponibile.")
+                   bot.sendMessage(chat_id,"Il xid {}".format(xid)+" è disponibile.")
                  else:
-                   bot.sendMessage(chat_id,"Errore! Inserire xid valido. ")
+                   bot.sendMessage(chat_id,"Errore! Inserire xid valido.")
                  if "name" in json_data:
                    name = json_data["name"]
                    bot.sendMessage(chat_id,"Nome: {} \n".format(name))
                  else:
-                   bot.sendMessage(chat_id, "Non é disponibilie")
+                   bot.sendMessage(chat_id, "Non è disponibilie")
                  if "image" in json_data:
                    image = json_data["image"]
                    bot.sendPhoto(chat_id,image)
                  else:
-                   bot.sendMessage(chat_id, "Non é disponibilie")
+                   bot.sendMessage(chat_id, "Non è disponibilie")
                  if "text" in json_data:
                    text = json_data["wikipedia_extracts"]["text"]
                    bot.sendMessage(chat_id,"Descrizione:\n {}".format(text))
                  else:
-                   bot.sendMessage(chat_id, "Non é disponibilie")
+                   bot.sendMessage(chat_id, "Non è disponibilie")
                  lat = json_data["point"]["lat"]
                  lon = json_data["point"]["lon"]
                  bot.sendLocation(chat_id, lat,lon)
@@ -201,7 +196,7 @@ def on_chat_message(message):
                     xid.append(json_data['features'][index]['properties']['xid'])
                     name.append(json_data['features'][index]['properties']['name'])
                     kinds.append(json_data['features'][index]['properties']['kinds'])
-                  bot.sendMessage(chat_id,"Le attrazioni ricadono sotto queste sotto-categorie:\n"+"- \n".join(kinds))
+                  bot.sendMessage(chat_id,"Le attrazioni turistiche ricadono sotto queste sotto-categorie:\n"+"- \n".join(kinds))
                   bot.sendMessage(chat_id,"Nomi delle attrazioni turistiche: \n"+" ,\n".join(name))
                   bot.sendMessage(chat_id,"I rispettivi xid, che puoi utilizzare per sapere di più sul monumento/museo etc. cliccando su /xid \n" )
                   bot.sendMessage(chat_id, "\n".join(xid))
