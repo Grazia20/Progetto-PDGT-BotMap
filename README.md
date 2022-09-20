@@ -12,7 +12,7 @@ Il progetto si pone come obiettivo il saper fornire informazioni all'utente rigu
 
 #### Scelte implementative:
 
-Ho voluto realizzare il progetto con il linguaggio Python e attraverso l'utilizzo della piattaforma "Replit.com". Ho dovuto installare i packager: pyTelegramBotAPI,telepot e json per leggeri la documentazione dell'API di OpenTripMap.
+Ho voluto realizzare il progetto con il linguaggio Python e attraverso l'utilizzo della piattaforma "Replit.com". Ho dovuto installare i packager: pyTelegramBotAPI, telepot e json per leggere la documentazione dell'API di OpenTripMap.
 
 #### API utilizzate:
 
