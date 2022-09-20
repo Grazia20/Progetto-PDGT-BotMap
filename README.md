@@ -2,13 +2,13 @@
 ## Progetto Piattaforme digitali per la gestione del territorio
 
 ### secondo appello sessione autunnale a.a. 21/22
-#### Cossu Grazia, numero maricola: 300240
+#### Cossu Grazia, numero matricola: 300240
 
 ## Titolo: BotMap
 
 #### Scopo del progetto:
 
-Il progetto si pone come obiettivo il saper fornire informazioni all'utente riguardanti un determinato luogo basandosi quasi del tutto sulle coordinate geografiche, con l'utilizzo di un bot Telegram (BotMap) e un insieme di dati reperiti attraverso il sito "https://opentripmap.io/product".
+Il progetto si pone come obiettivo il saper fornire informazioni all'utente riguardanti un determinato luogo basandosi quasi del tutto sulle coordinate geografiche, con l'utilizzo di un Bot Telegram (BotMap) e un insieme di dati reperiti attraverso il sito "https://opentripmap.io/product".
 
 #### Scelte implementative:
 
@@ -16,9 +16,7 @@ Ho voluto realizzare il progetto con il linguaggio Python e attraverso l'utilizz
 
 #### API utilizzate:
 
-Mi sono servita delle API fornite dal sito OpenTripMap e dal Bot di Telegram. La prima consente di ottenere i dati degli oggetti dal database OpenTenipMap utilizzando le richieste HTTP.
-OpentripMap é basato sull'elaborazione cooperativa di diverse fonti di dati aperti (OpenStreetMap, Wikidata, Wikipedia, Ministero della cultura e Ministero delle risorse naturali e dell'ambiente della Federazione Russa) e comprende oltre 10 milioni di attrazioni turistiche e strutture in tutto il mondo.
-La seconda è un'interfaccia basata su HTTP. I Bot non sono altro che utenti artificiali di Telegram e, composti soltanto da stringhe di codice, sono programmati per interagire nelle chat singole con altri utenti dell’applicazione di messaggistica. Non sono utenti reali, sebbene siano creati per svolgere azioni e interagire.
+Mi sono servita delle API fornite dal sito OpenTripMap e dal Bot di Telegram. La prima consente di ottenere i dati degli oggetti dal database OpenTenipMap utilizzando le richieste HTTP. OpentripMap è basato sull'elaborazione cooperativa di diverse fonti di dati aperti (OpenStreetMap, Wikidata, Wikipedia, Ministero della cultura e Ministero delle risorse naturali e dell'ambiente della Federazione Russa) e comprende oltre 10 milioni di attrazioni turistiche e strutture in tutto il mondo. La seconda è un'interfaccia basata su HTTP. I Bot non sono altro che utenti artificiali di Telegram e, composti soltanto da stringhe di codice, sono programmati per interagire nelle chat singole con altri utenti dell’applicazione di messaggistica. Non sono utenti reali, sebbene siano creati per svolgere azioni e interagire.
 
 #### Documentazione dell'API:
 
@@ -51,7 +49,7 @@ Per visualizzare sul bot i risultati e per interagire con l'utente, utilizzo i s
 
 **POST**:
 
- * bot.send_message - Restitusce messaggi di testo.  Nei due comandi /search e /types, utilizzo il parametro reply_markup che mi permette di inserire un'interfaccia aggiuntiva. Nel primo caso, la tastiera ReplyKeyboard permette di ottenere il risultato cliccandoci, nel secondo,invece, sono dei suggerimenti sulla tipologia che si può inserire insieme alle coordinate geografiche.
+ * bot.send_message - Restituisce messaggi di testo. Nei due comandi /search e /types, utilizzo il parametro reply_markup che mi permette d'inserire un'interfaccia aggiuntiva. Nel primo caso, la tastiera ReplyKeyboard permette di ottenere il risultato cliccandoci, nel secondo, invece, sono dei suggerimenti sulla tipologia che si può inserire insieme alle coordinate geografiche.
  
  * bot.send_photo - Restituisce una foto.
  
