@@ -23,7 +23,9 @@ La seconda è un'interfaccia basata su HTTP. I Bot non sono altro che utenti art
 #### Documentazione dell'API:
 
 Di seguito sono riportate tutte le richieste dell' API che il servizio fornisce con una descrizione dettagliata del loro funzionamento. Per entrambe servono delle API key; in Replit, le chiavi vengono salvate in Secrets(System environment variables.) e posso utilizzarle in questo modo:
-# screenshot
+
+.![Screenshot secrets](https://user-images.githubusercontent.com/62015297/191298891-11c9a097-79c8-4aae-9fd8-4f2ac69aa670.png)
+
 
 Da *OpenTripMap*:
 
@@ -34,7 +36,7 @@ Da *OpenTripMap*:
 
  * Lista di oggetti:
        - https://api.opentripmap.com/0.1/en/places/radius?radius=
-      A questa agiungo i seguenti parametri:
+      A questa aggiungo i seguenti parametri:
           - longitudine
           - latitudine
           - limite
@@ -76,4 +78,14 @@ Per visualizzare sul bot i risultati e per interagire con l'utente, utilizzo i s
  * /position - Metodo che in base alla tua posizione restituisce una lista di oggetti con i loro identificativi.
 
 ### Test del sistema:
-Il server non è sempre attivo. Per accedere al servizio è necessario accedere al client tramite il seguente endpoint "https://replit.com/@IHTL00/Telegram-bot#main.py" .
+Il server non è sempre attivo. Per accedere al servizio è necessario accedere al client tramite il seguente endpoint "https://replit.com/@IHTL00/Telegram-bot#main.py".
+
+Esecuzione di alcuni dei comandi disponibili:
+
+![Screenshot catalog](https://user-images.githubusercontent.com/62015297/191299157-ea1a1d04-cc9e-4d91-8bcb-95f48bc92564.png)
+
+![Screenshot position0](https://user-images.githubusercontent.com/62015297/191299928-1832d35c-ae92-4782-899c-e43b0b947b6f.png)
+![Screenshot position1](https://user-images.githubusercontent.com/62015297/191300024-b1380782-23a3-4f9b-9d23-36c57de6286b.png)
+
+![Screenshot search0](https://user-images.githubusercontent.com/62015297/191300273-34204ac3-6e11-43e9-8f6c-1812776336cb.png)
+![Screenshot search1](https://user-images.githubusercontent.com/62015297/191301027-d0743949-5d81-4a25-9ddc-0fc6eeabd9b0.png)
