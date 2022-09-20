@@ -78,7 +78,7 @@ Per visualizzare sul bot i risultati e per interagire con l'utente, utilizzo i s
  * /position - Metodo che in base alla tua posizione restituisce una lista di oggetti con i loro identificativi.
 
 ### Test del sistema:
-Il server non è sempre attivo. Per accedere al servizio è necessario accedere al client tramite il seguente endpoint "https://replit.com/@IHTL00/Telegram-bot#main.py".
+Il server non è sempre attivo. Per accedere al servizio è necessario accedere al client tramite il seguente endpoint "https://replit.com/@IHTL00/BotMap#main.py".
 
 Esecuzione di alcuni dei comandi disponibili:
 
