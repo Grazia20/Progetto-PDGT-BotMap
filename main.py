@@ -110,7 +110,7 @@ def on_chat_message(message):
                    bot.sendPhoto(chat_id,image)
                  else:
                    bot.sendMessage(chat_id, "Non è disponibilie")
-                 if "text" in json_data:
+                 if "text" in json_data["wikipedia_extracts"]:
                    text = json_data["wikipedia_extracts"]["text"]
                    bot.sendMessage(chat_id,"Descrizione:\n {}".format(text))
                  else:
